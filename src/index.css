@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: #f3f3f3;
+  padding-top: 80px;
+  margin: 0;
+}
+
+header,
+footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  z-index: 999;
+}
+
+header {
+  top: 0;
+  height: 60px;
+  background: rgb(61,68,152);
+  background: linear-gradient(90deg, rgba(61,68,152,1) 29%, rgba(66,81,200,1) 100%);
+  color: white;
+}
+
+footer {
+  bottom: 0;
+  height: 18px;
+  font-size: 10px;
+  background: rgb(61,68,152);
+  background: linear-gradient(90deg, rgba(61,68,152,1) 29%, rgba(66,81,200,1) 100%);
+  padding-top: 4px;
+  color: white;
+  border-top: 1px solid black;
+}
+
+.inputForm {
+  padding: 10px;
+  text-align: center;
+}
+
+.enterTaskName {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  max-width: 50%;
+  min-width: 30%;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+  width: 10%;
+  border: 0;
+  background-color: #2a2c77;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #353d9d;
+}
+
+.todo li {
+  max-width: 50%;
+  min-width: 50%;
+  cursor: pointer;
+  margin: auto;
+  background-color: #f4c700;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+li:hover {
+  background-color: #f7d954;
+  color: #353d9d;
+}
