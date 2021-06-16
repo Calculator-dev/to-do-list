@@ -2,6 +2,8 @@ import React from "react";
 
 const TodoItem = ({ setInputText, todos, setTodos, inputText }) => {
 
+
+
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
     };
@@ -14,6 +16,7 @@ const TodoItem = ({ setInputText, todos, setTodos, inputText }) => {
         setInputText("");
     };
 
+
     return (
         <div className="TodoList">
             <div className="inputForm">
@@ -21,7 +24,7 @@ const TodoItem = ({ setInputText, todos, setTodos, inputText }) => {
                     <input value={inputText} onChange={inputTextHandler}
                         placeholder="Enter new task" className="enterTaskName">
                     </input>
-                    <button onClick={submitTodoHandler} type="submit">Add</button>
+                    <button onClick={submitTodoHandler} type="submit" disabled={inputText === ""}>Add</button>
                 </form>
             </div>
         </div >
